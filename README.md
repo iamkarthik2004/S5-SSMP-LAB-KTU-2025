@@ -2,7 +2,7 @@
 
 List of Experiments
 
-- [Experiment 1]() - Simulate the following non-preemptive CPU scheduling algorithms to find turnaround time and waiting time. a) FCFS b) SJF c) Round Robin (pre-emptive) d) Priority (CO4)
+- [Experiment 1](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/tree/main/Expt%201) - Simulate the following non-preemptive CPU scheduling algorithms to find turnaround time and waiting time. a) FCFS b) SJF c) Round Robin (pre-emptive) d) Priority (CO4)
 - Experiment 2 - Implement the Disk Scheduling algorithms (CO4)
 - Experiment 3 - Implement Banker’s Algorithm (CO4)
 - Experiment 4 - Implement pass one of a two pass assembler (CO5)
