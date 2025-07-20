@@ -2,13 +2,13 @@
 
 List of Experiments
 
-Experiment 1 - Simulate the following non-preemptive CPU scheduling algorithms to find turnaround time and waiting time. a) FCFS b) SJF c) Round Robin (pre-emptive) d) Priority (CO4)
-Experiment 2 - Implement the Disk Scheduling algorithms (CO4)
-Experiment 3 - Implement Banker’s Algorithm (CO4)
-Experiment 4 - Implement pass one of a two pass assembler (CO5)
-Experiment 5 - Implement pass two of a two pass assembler (CO5)
-Experiment 6 - Implement an absolute loader (CO5)
-Experiment 7 - Program to add two 16-bit numbers using trainer kit (CO1)
+- Experiment 1 - Simulate the following non-preemptive CPU scheduling algorithms to find turnaround time and waiting time. a) FCFS b) SJF c) Round Robin (pre-emptive) d) Priority (CO4)
+- Experiment 2 - Implement the Disk Scheduling algorithms (CO4)
+- Experiment 3 - Implement Banker’s Algorithm (CO4)
+- Experiment 4 - Implement pass one of a two pass assembler (CO5)
+- Experiment 5 - Implement pass two of a two pass assembler (CO5)
+- Experiment 6 - Implement an absolute loader (CO5)
+- Experiment 7 - Program to add two 16-bit numbers using trainer kit (CO1)
 Experiment 8 - Program to multiply two 16-bit numbers using trainer kit (CO1)
 Experiment 9 - Program to sort n numbers using trainer kit. (CO1)
 Experiment 10 - Study of Assembler and Debugging commands. (CO2)
