@@ -1,6 +1,8 @@
 # 🧮 Experiment No: 6  
 ## Addition of Two 16-Bit Numbers
 
+---
+
 ### 🎯 **Aim**
 Write a program to add two 16-bit numbers by:  
 1. Reading the input **within the program**.  
@@ -37,7 +39,7 @@ Write a program to add two 16-bit numbers by:
 | 0000         | 2401                | 09                |
 
 **Result:**  
-The sum of `0409` and `0501` is `090A`, which is stored at memory location `2400`.
+The sum of `0409` and `0501` is **090A**, which is stored at memory location `2400`.
 
 ---
 
@@ -62,17 +64,34 @@ The sum of `0409` and `0501` is `090A`, which is stored at memory location `2400
 
 ---
 
-### ⚙️ **Explanation**
-1. The **source index (SI)** is initialized with memory address `3000`, where the two input 16-bit numbers are stored.  
-2. The first 16-bit number is loaded into **AX** and the second into **BX** using successive memory reads.  
-3. The two registers are added using `ADD AX, BX`.  
-4. The result is stored back in the next memory locations after the inputs.  
-5. The program halts using the `HLT` instruction.
+### 🧩 **Input**
+
+| **Memory Location** | **Data (Hex)** |
+|----------------------|----------------|
+| 3000 | 09 |
+| 3001 | 02 |
+| 3002 | 05 |
+| 3003 | 05 |
+
+---
+
+### 🧾 **Output**
+
+| **Address** | **Memory Location** | **Data (Result)** |
+|--------------|---------------------|-------------------|
+| 0000         | 3004                | 0E                |
+| 0000         | 3005                | 07                |
+
+**Result:**  
+The input values represent:  
+- First number = `0209`  
+- Second number = `0505`  
+Their sum = **070E**, which is stored at memory locations **3004** and **3005**.
 
 ---
 
 ### ✅ **Conclusion**
 Both programs successfully perform the addition of two 16-bit numbers —  
-- **Program 1** takes values directly from the code, and  
-- **Program 2** reads them dynamically from memory (keyboard input through Trainer Kit).
-
+- **Program 1** uses fixed values from the program, while  
+- **Program 2** reads values from memory (keyboard input through Trainer Kit).  
+In both cases, the result is stored back in memory as a 16-bit sum.
