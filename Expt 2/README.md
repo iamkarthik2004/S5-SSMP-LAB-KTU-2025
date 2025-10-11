@@ -31,7 +31,7 @@ Total Seektime is: 584
 
 ## 2. SCAN DISK SCHEDULING
 
-**Code:** [SCAN DISK Program](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%202/FCFS_disk.c)  
+**Code:** [SCAN DISK Program](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%202/SCAN.c)  
 
 **Sample Output:**
 
@@ -39,9 +39,9 @@ Total Seektime is: 584
 
 ```
 
-## 3. SCAN DISK SCHEDULING
+## 3. C - SCAN DISK SCHEDULING
 
-**Code:** [C - SCAN DISK Program](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%202/FCFS_disk.c)  
+**Code:** [C - SCAN DISK Program](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%202/C-SCAN.c)  
 
 **Sample Output:**
 
