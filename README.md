@@ -12,5 +12,5 @@ List of Experiments
 - [Experiment 8]() - Study of Assembler and Debugging commands. (CO2)
 - [Experiment 9]() - Program to add two 16-bit numbers using MASM. (CO2)
 - [Experiment 10]() - Program to multiply two 16-bit numbers using MASM. (CO2)
-- [Experiment 13]() - Interfacing with stepper motor - Rotate through any given sequence. (CO3)
-- [Experiment 14]() - Interfacing with 8255 (Mode 0) (CO3)
+- [Experiment 11]() - Interfacing with stepper motor - Rotate through any given sequence. (CO3)
+- [Experiment 12]() - Interfacing with 8255 (Mode 0) (CO3)
