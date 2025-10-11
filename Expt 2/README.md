@@ -29,3 +29,22 @@ Head movement from 124 to 66:58
 Total Seektime is: 584
 ```
 
+## 2. SCAN DISK SCHEDULING
+
+**Code:** [SCAN DISK Program](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%202/FCFS_disk.c)  
+
+**Sample Output:**
+
+```
+
+```
+
+## 3. SCAN DISK SCHEDULING
+
+**Code:** [C - SCAN DISK Program](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%202/FCFS_disk.c)  
+
+**Sample Output:**
+
+```
+
+```
