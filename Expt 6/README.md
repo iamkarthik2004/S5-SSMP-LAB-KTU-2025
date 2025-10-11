@@ -8,13 +8,13 @@ Write a program to add two 16-bit numbers by reading the input in the program an
 
 ## 🧠 **Program 1: Input Values Within the Program**
 
-| **Address** | **Mnemonics**     | **Opcode** | **Comment**                              |
-|--------------|------------------|-------------|-------------------------------------------|
-| 2000         | MOV AX, 0409     | C7C00904    | Store 0409 to AX register                 |
-| 2004         | MOV BX, 0501     | C7C30501    | Store 0501 to BX register                 |
-| 2008         | ADD AX, BX       | 01D8        | Add elements of AX and BX register        |
-| 200A         | MOV [2400], AX   | 89060024    | Store result from AX to memory location 2400 |
-| 200E         | HLT              | FA          | End of program                            |
+| **Address** | **Mnemonics**   | **Opcode** | **Comment**                              |
+|--------------|----------------|-------------|-------------------------------------------|
+| 2000         | MOV AX, 0409   | C7C00904    | Store 0409 to AX register                 |
+| 2004         | MOV BX, 0501   | C7C30501    | Store 0501 to BX register                 |
+| 2008         | ADD AX, BX     | 01D8        | Add elements of AX and BX register        |
+| 200A         | MOV [2400], AX | 89060024    | Store result from AX to memory location 2400 |
+| 200E         | HLT            | FA          | End of program                            |
 
 ---
 
@@ -22,10 +22,22 @@ Write a program to add two 16-bit numbers by reading the input in the program an
 1. The value `0409` is loaded into register **AX**.  
 2. The value `0501` is loaded into register **BX**.  
 3. The instruction `ADD AX, BX` adds the two 16-bit numbers.  
-4. The result is stored at memory location **2400**.  
+4. The result (`090A`) is stored at memory location **2400**.  
 5. The program halts with the `HLT` instruction.
 
 ---
 
-### 🧾 **Result**
-The program successfully adds two 16-bit numbers and stores the result in memory location `2400`.
+### 🧾 **Output**
+
+| **Address** | **Memory Location** | **Data (Result)** |
+|--------------|---------------------|-------------------|
+| 0000         | 2400                | 0A                |
+| 0000         | 2401                | 09                |
+
+**Result:**  
+The sum of `0409` and `0501` is `090A`, which is stored at memory location `2400`.
+
+---
+
+### ✅ **Conclusion**
+The program successfully adds two 16-bit numbers and stores the result in the specified memory location.
