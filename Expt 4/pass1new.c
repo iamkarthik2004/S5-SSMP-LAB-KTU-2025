@@ -36,7 +36,7 @@ int main(){
     	
     	fprintf(fp4,"%d\t",locctr);
     	
-    	if((strcmp(label,"**") != 0) && (strcmp(opcode,"RESW") != 0) && (strcmp(opcode,"RESW") != 0)){
+    	if((strcmp(label,"**") != 0) && (strcmp(opcode,"RESW") != 0) && (strcmp(opcode,"RESB") != 0)){
     		fprintf(fp3,"%s\t%d\n",label,locctr);
     	}
     	
