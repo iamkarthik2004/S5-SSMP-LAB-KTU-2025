@@ -6,7 +6,7 @@ AIM - Implement the Disk Scheduling Alogirthms
 
 ## 1. FCFS (First-Come, First-Served) Disk Scheduling
 
-**Code:** [FCFS Program](./fcfs.c)  
+**Code:** [FCFS Program](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%202/FCFS_disk.c)  
 
 **Sample Output:**
 
