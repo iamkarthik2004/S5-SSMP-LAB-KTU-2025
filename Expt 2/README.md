@@ -61,5 +61,21 @@ Total seek time is : 278
 **Sample Output:**
 
 ```
+Enter Head position: 100
+Enter number of disk requests: 6
+Enter the disk size: 200
+Enter the disk requests: 20 89 130 45 120 180
 
+	C-SCAN DISK SCHEDULING
+
+Head movement from 100 to 120: 20
+Head movement from 120 to 130: 10
+Head movement from 130 to 180: 50
+Head movement from 180 to 199: 19
+Head movemetn from 199 to 0: 199
+Head movement from 199 to 20: 20
+Head movement from 20 to 45: 25
+Head movement from 45 to 89: 44
+
+Total seek time is: 387
 ```
