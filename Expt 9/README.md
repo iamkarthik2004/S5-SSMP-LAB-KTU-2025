@@ -66,4 +66,4 @@ END START
 ```
 ---
 ### Output
-![MASM Addition Output](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%209/16output.png)
+![MASM Addition Output](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%209/16addoutput.png)
