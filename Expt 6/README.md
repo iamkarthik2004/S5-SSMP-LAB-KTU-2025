@@ -2,7 +2,9 @@
 ## Addition of Two 16-Bit Numbers
 
 ### 🎯 **Aim**
-Write a program to add two 16-bit numbers by reading the input in the program and reading the input from the keyboard using a Trainer Kit.
+Write a program to add two 16-bit numbers by:  
+1. Reading the input **within the program**.  
+2. Reading the input **from the keyboard using a Trainer Kit**.
 
 ---
 
@@ -39,5 +41,38 @@ The sum of `0409` and `0501` is `090A`, which is stored at memory location `2400
 
 ---
 
+## 💻 **Program 2: Input Values Read from Keyboard**
+
+| **Address** | **Mnemonics** | **Opcode** | **Comment** |
+|--------------|----------------|-------------|--------------|
+| 2000 | MOV SI, 3000 | C7C60030 | Move memory location 3000 to source index |
+| 2004 | MOV AL, [SI] | 8A04 | Move contents of source index to AL register |
+| 2006 | INC SI | 46 | Increment Source Index |
+| 2007 | MOV AH, [SI] | 8A24 | Move contents of SI to AH register |
+| 2009 | INC SI | 46 | Increment SI |
+| 200A | MOV BL, [SI] | 8A1C | Move contents of SI to BL register |
+| 200C | INC SI | 46 | Increment SI |
+| 200D | MOV BH, [SI] | 8A3C | Move contents of SI to BH register |
+| 200F | ADD AX, BX | 01D8 | Add contents of AX and BX registers |
+| 2011 | INC SI | 46 | Increment SI |
+| 2012 | MOV [SI], AL | 8804 | Move contents of AL register to SI location |
+| 2014 | INC SI | 46 | Increment SI |
+| 2015 | MOV [SI], AH | 8824 | Move contents of AH register to SI location |
+| 2017 | HLT | FA | End of program |
+
+---
+
+### ⚙️ **Explanation**
+1. The **source index (SI)** is initialized with memory address `3000`, where the two input 16-bit numbers are stored.  
+2. The first 16-bit number is loaded into **AX** and the second into **BX** using successive memory reads.  
+3. The two registers are added using `ADD AX, BX`.  
+4. The result is stored back in the next memory locations after the inputs.  
+5. The program halts using the `HLT` instruction.
+
+---
+
 ### ✅ **Conclusion**
-The program successfully adds two 16-bit numbers and stores the result in the specified memory location.
+Both programs successfully perform the addition of two 16-bit numbers —  
+- **Program 1** takes values directly from the code, and  
+- **Program 2** reads them dynamically from memory (keyboard input through Trainer Kit).
+
