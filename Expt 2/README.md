@@ -37,11 +37,8 @@ Total Seektime is: 584
 
 ```
 Enter Head position: 100
-
 Enter number of disk requests: 6
-
 Enter the disk size: 200
-
 Enter the disk requests: 20 89 130 45 120 180
 
 	SCAN DISK SCHEDULING
