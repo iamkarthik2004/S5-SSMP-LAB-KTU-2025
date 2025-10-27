@@ -64,6 +64,112 @@ L1:
 CODE ENDS
 END START
 ```
+# 🧩 Steps to Execute 8086 Assembly Program (MASM)
+
+This guide explains how to assemble, link, and execute an **8086 Assembly Language Program** using **MASM** and **DEBUG**.
+
+---
+
+## 1️⃣ Mount the 8086 Drive
+
+If MASM/8086 Simulator is installed in **C drive**:
+```bash
+mount c c:/8086 
+```
+If installed in D drive:
+```
+mount c d:/8086
+```
+## 2️⃣ Open and Edit the Program
+Create or modify your assembly file:
+ ```
+edit filename.asm
+```
+✏️ Type your full assembly program, then Save → Exit the editor.
+
+## 3️⃣ Assemble the Program
+Assemble your .asm file using MASM:
+```
+masm filename.asm
+```
+➡️ Press Enter three times when prompted for:
+
+Object file name
+
+Listing file name
+
+Cross-reference file name 
+
+## 4️⃣ Link the Object File
+Link the .obj file to generate an executable:
+```
+link filename.obj
+```
+
+➡️ Again, press Enter three times when prompted.
+
+## 5️⃣ Run the Program in DEBUG Mode
+
+Start the debugger:
+```
+debug filename.exe
+```
+
+## 6️⃣ Trace or Execute Instructions
+
+To trace line-by-line:
+```
+-t
+```
+
+To execute the program completely (until INT 3):
+
+```
+-g = 0000
+```
+
+## 7️⃣ Enter Input Values in Memory
+
+Set input data starting from memory address 3000H:
+```
+-e 3000
+```
+
+Then enter the data bytes manually.
+Example:
+```
+075A:3000 B8.09 06.02 00.05 50.05
+```
+## 8️⃣ Execute the Program
+
+Run the program after entering inputs:
+```
+-g = 0000
+```
+
+## 9️⃣ Display Memory Contents
+
+Check the result stored in memory (from 3000H to 3005H):
+```
+-d 3000,3005
+```
+
+🧾 Example Output:
+```
+075A:3000 09 02 05 0E 07
+```
+| Step | Command              | Description          |
+| ---- | -------------------- | -------------------- |
+| 1    | `mount c c:/8086`    | Mount MASM drive     |
+| 2    | `edit filename.asm`  | Create/Edit program  |
+| 3    | `masm filename.asm`  | Assemble source      |
+| 4    | `link filename.obj`  | Link object file     |
+| 5    | `debug filename.exe` | Start debugger       |
+| 6    | `-t` or `-g=0000`    | Trace or run program |
+| 7    | `-e 3000`            | Enter input data     |
+| 8    | `-g=0000`            | Execute program      |
+| 9    | `-d 3000,3005`       | Display results      |
+
 ---
 ### Output
 ![MASM Addition Output](https://github.com/iamkarthik2004/S5-SSMP-LAB-KTU-2025/blob/main/Expt%209/16addoutput.png)
