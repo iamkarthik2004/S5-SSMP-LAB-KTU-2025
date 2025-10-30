@@ -1,1 +1,17 @@
-ss
+CODE SEGMENT
+ASSUME CS:CODE
+START:
+    MOV SI,3000H
+    MOV AL,[SI]
+    ROL AL,1
+    JC ODD
+    MOV BL,00H     ; EVEN → BL=0
+    JMP STORE
+ODD:
+    MOV BL,01H     ; ODD → BL=1
+STORE:
+    INC SI
+    MOV [SI],BL
+    INT 3
+CODE ENDS
+END START
