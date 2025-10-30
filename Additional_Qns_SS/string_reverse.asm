@@ -1,0 +1,38 @@
+DATA SEGMENT
+STR DB 'HELLO$',0
+REV DB 10 DUP('$')
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE, DS:DATA
+START:
+    MOV AX,DATA
+    MOV DS,AX
+
+    LEA SI,STR
+    MOV CX,0
+
+L1: MOV AL,[SI]
+    CMP AL,'$'
+    JE FIND_END
+    INC CX
+    INC SI
+    JMP L1
+
+FIND_END:
+    DEC SI             ; Point to last character
+    LEA DI,REV
+
+REV_LOOP:
+    MOV AL,[SI]
+    MOV [DI],AL
+    DEC SI
+    INC DI
+    LOOP REV_LOOP
+
+    MOV AL,'$'
+    MOV [DI],AL
+    INT 3
+
+CODE ENDS
+END START
