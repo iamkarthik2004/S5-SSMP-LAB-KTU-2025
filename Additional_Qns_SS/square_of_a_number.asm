@@ -1,0 +1,13 @@
+CODE SEGMENT
+ASSUME CS:CODE
+START:
+    MOV SI,3000H
+    MOV AL,[SI]
+    MUL AL          ; AX = A²
+    INC SI
+    MOV [SI],AL
+    INC SI
+    MOV [SI],AH
+    INT 3
+CODE ENDS
+END START
