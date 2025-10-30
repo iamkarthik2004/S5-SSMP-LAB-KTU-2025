@@ -57,7 +57,6 @@ int main(){
 	printf("\n");
 	}
 	
-	
 	//Total wt and tat
 	for(int i=0; i<n; i++){
 	tatTot += tat[i];
@@ -82,15 +81,6 @@ int main(){
     	printf("      %d", tat[i]);
     	}
 	
-	printf("\n");
-	
-	
-	
-	
+	printf("\n");	
 	return 0;	 
 }
-
-
-
-
- 
