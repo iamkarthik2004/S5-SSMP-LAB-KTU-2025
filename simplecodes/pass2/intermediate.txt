@@ -1,0 +1,4 @@
+1000 COPY START 1000
+1000 **    LDA   ALPHA
+1003 **    STA   BETA
+1006 **    END   **
