@@ -1,11 +1,6 @@
 /*SS LAB - EXPT 1
 (iv) ROUND ROBIN
 */
-/* 
-    SS LAB - EXPERIMENT 1
-    (iv) ROUND ROBIN SCHEDULING
-*/
-
 #include <stdio.h>
 
 void roundRobin(int processes[], int n, int BT[], int quantum) {
