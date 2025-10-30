@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 int main(){
 	int n;
@@ -7,23 +6,21 @@ int main(){
 	
 	printf("Enter the number of processes: ");
 	scanf("%d", &n);
-	int bt[n], wt[n], tat[n], pid[n], priority[n];
+	int bt[n], wt[n], tat[n], pid[n];
 	
 	//Burst Time Input
-	printf("Enter the Burst Time and Priority for each process: \n");
+	printf("Enter the Burst Time For Each Process: \n");
 	for(int i=0; i<n; i++){
 	pid[i] = i+1;
-	printf("Burst time of Process P%d: ", pid[i]);
+	printf("P%d: ", pid[i]);
 	scanf("%d", &bt[i]);
-	printf("Priority of Process P%d: ", pid[i]);
-	scanf("%d", &priority[i]);
 	}
 	
 	for(int i=0; i<n-1; i++)
 	{
 		for(int j=i+1; j<n; j++)
 		{
-			if(priority[i] > priority[j])
+			if(bt[i] > bt[j])
 			{	
 				//Swap Burst Time
 				int temp = bt[i];
@@ -34,11 +31,6 @@ int main(){
 				temp = pid[i];
 				pid[i] = pid[j];
 				pid[j] = temp;
-				
-				//Swap Prioriy
-				temp = priority[i];
-				priority[i] = priority[j];
-				priority[j] = temp;
 			}
 		}	
 	}
@@ -56,11 +48,10 @@ int main(){
 	
 	printf("\n");
 	
-	printf("\nPROCESS ID\tBURST TIME\tPRIORITY\tWAITING TIME\tTURNAROUND TIME\n");
+	printf("\nPROCESS ID\tBURST TIME\tWAITING TIME\tTURNAROUND TIME\n");
 	for(int i=0; i<n; i++){
 	printf("P%d   ", pid[i]);
 	printf("\t\t%d", bt[i]);
-	printf("\t\t%d", priority[i]);
 	printf("\t\t%d", wt[i]);
 	printf("\t\t%d", tat[i]);
 	printf("\n");
@@ -79,8 +70,6 @@ int main(){
 	printf("\nAverage Waiting Time: %0.2f", avgwt);
 	printf("\nAverage Turnaround Time: %0.2f", avgtat);
 	
-	printf("\n");
-	
 	printf("\nGantt Chart\n");
 	for(int i=0; i<n; i++){
 	printf("   P%d   ", pid[i]);
@@ -95,6 +84,13 @@ int main(){
 	
 	printf("\n");
 	
-
+	
+	
+	
 	return 0;	 
 }
+
+
+
+
+ 
